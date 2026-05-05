@@ -969,9 +969,9 @@
     function save() {
       readFormIntoState();
       localStorage.setItem(storageKey, JSON.stringify(state));
-      $("saveState").textContent = "Saved locally";
+      $("saveState").textContent = "Saved";
       render();
-      toast("Changes saved locally");
+      toast("Changes saved");
     }
 
     function reset() {
